@@ -1,9 +1,10 @@
 tmux
 =========
 
-- [Session](#Session)
-- [Window](#Window)
-- [Configuration](#Configuration)
+- [Session](#session)
+- [Window](#window)
+- [Pane](#pane)
+- [Configuration](#configuration)
 
 ### tmux
 
@@ -19,12 +20,15 @@ tmux
   - `tmux new -s <session-name>`
   - `tmux new` : not giving a session name and not recommended
 
-**Showing session**
+**list session**
 
   - `tmux ls`
   - `tmux list-session`
   - `tmux list-sessions`
-  - `C+b s`
+  - `C+b s` : list sessions
+
+**Rename session name**
+  - `C+b $` 
   
 **Attaching to a existing session**
 
@@ -42,9 +46,52 @@ tmux
   
 ### Window
 
+**Create a window**
+  - `C+b c`
+
+**List window**
+  - `C+b w`
+
+**Rename the current window**
+  - `C+b ,`
+
+**Split window**
+  - `C+b "` : split vertically
+  - `C+b %` : split horizontally
+
+**Navigate on windows**
+  - `C+b n` : change to next window
+  - `C+b p` : change to previous window
+  - `C+b [0-9]` : select windows 0 through 9
+  
+
 **Kill a window**
 
   - `tmux kill-window -t <window-name>`
+
+### Pane
+
+**Navigate between the panes**
+
+  - `C+b h` : move to left
+  - `C+b j` : move to down
+  - `C+b k` : move to up
+  - `C+b l` : move to right
+  
+**Show pane numbers**
+  - `C+b q`
+
+**toggle between panes**
+ - `C+b o`
+ 
+**Swap with pane**
+  -  `C+b }` swap with previous pane
+  -  `C+b {` swap with next pane
+
+**Break the pane out of the window**
+  - `C+b !`
+**kill current pane**
+  - `C+b x`
 
 ### Configuration
 
@@ -84,3 +131,9 @@ The following config file which I use now:
     # quick pane cycling
     unbind ^A
     bind ^A select-pane -t :.+
+
+### Miscellaneous
+
+Show current time in pane
+  - `C+b t`
+
