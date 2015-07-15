@@ -1,8 +1,9 @@
-# tmux
+tmux
+=========
 
-- Session
-- Window
-- Configuration
+- [Session](#Session)
+- [Window](#Window)
+- [Configuration](#Configuration)
 
 ### tmux
 
