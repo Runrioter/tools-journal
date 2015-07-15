@@ -5,6 +5,7 @@ tmux
 - [Window](#window)
 - [Pane](#pane)
 - [Configuration](#configuration)
+- (Miscellaneous)(#miscellaneous)
 
 ### tmux
 
@@ -90,6 +91,7 @@ tmux
 
 **Break the pane out of the window**
   - `C+b !`
+
 **kill current pane**
   - `C+b x`
 
