@@ -5,7 +5,7 @@ tmux
 - [Window](#window)
 - [Pane](#pane)
 - [Configuration](#configuration)
-- (Miscellaneous)(#miscellaneous)
+- [Miscellaneous](#miscellaneous)
 
 ### tmux
 
