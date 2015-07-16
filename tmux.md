@@ -21,7 +21,7 @@ tmux
   - `tmux new -s <session-name>`
   - `tmux new` : not giving a session name and not recommended
 
-**list session**
+**List session**
 
   - `tmux ls`
   - `tmux list-session`
@@ -64,10 +64,9 @@ tmux
   - `C+b n` : change to next window
   - `C+b p` : change to previous window
   - `C+b [0-9]` : select windows 0 through 9
-  
 
 **Kill a window**
-
+  - `C+b &` : kill the current window
   - `tmux kill-window -t <window-name>`
 
 ### Pane
@@ -78,12 +77,15 @@ tmux
   - `C+b j` : move to down
   - `C+b k` : move to up
   - `C+b l` : move to right
-  
-**Show pane numbers**
-  - `C+b q`
 
-**toggle between panes**
+**Toggle between panes**
  - `C+b o`
+
+**Return to the previously active pane**
+  - `C+b ;`
+
+**Rotate the panes**
+  - `C+b C+o`
  
 **Swap with pane**
   -  `C+b }` swap with previous pane
@@ -136,6 +138,14 @@ The following config file which I use now:
 
 ### Miscellaneous
 
-Show current time in pane
+**Show current time in pane**
   - `C+b t`
 
+**Show pane numbers**
+  - `C+b q`
+
+**Scroll up and down**
+  - `C+b [ <UP>[<DOWN>]`
+
+**Show key bindings**
+  - `C+b ?`
