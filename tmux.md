@@ -4,6 +4,7 @@ tmux
 - [Session](#session)
 - [Window](#window)
 - [Pane](#pane)
+- [Buffer](#buffer)
 - [Configuration](#configuration)
 - [Miscellaneous](#miscellaneous)
 
