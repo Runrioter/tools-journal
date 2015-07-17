@@ -97,6 +97,20 @@ tmux
 **kill current pane**
   - `C+b x`
 
+### Buffer
+
+**List buffers**
+  - `C+b #`
+
+**Delete buffer**
+  - `C+b -`
+
+**Choose buffer**
+  - `C+b =`
+
+**Paste buffer**
+  - `C+b ]`
+
 ### Configuration
 
 The following config file which I use now:
