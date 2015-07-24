@@ -5,6 +5,7 @@ tmux
 - [Window](#window)
 - [Pane](#pane)
 - [Buffer](#buffer)
+- [Command Mode](#command mode)
 - [Configuration](#configuration)
 - [Miscellaneous](#miscellaneous)
 
@@ -121,6 +122,15 @@ tmux
 
 **Paste buffer**
   - `C+b ]`
+
+### Command Mode
+
+**Enter command mode**
+  - `C+b :`
+
+**At Command Mode**
+  - `new-window -n <window-name> "command-name"` : such as `new-window -n processes "top"`
+    - This starts up a short-term window. While a app exits, window is closed.
 
 ### Configuration
 
