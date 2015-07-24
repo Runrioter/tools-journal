@@ -18,8 +18,10 @@ tmux
 
 **Creating a new session**
 
-  - `tmux` :enough easy
+  - `tmux` :enough easy but not recommanded
   - `tmux new -s <session-name>`
+  - `tmux new -s <session-name> -d` : session created but detached 
+  - `tmux new-session -s <session-name>`
   - `tmux new` : not giving a session name and not recommended
 
 **List session**
@@ -27,7 +29,7 @@ tmux
   - `tmux ls`
   - `tmux list-session`
   - `tmux list-sessions`
-  - `C+b s` : list sessions
+  - `C+b s` : list sessions and switch between sessions quickly
 
 **Rename session name**
   - `C+b $` 
@@ -36,6 +38,8 @@ tmux
 
   - `tmux a`
   - `tmux a -t <session-name>`
+  - `tmux attach` : used when there exists a session
+  - `tmux attach -t <session-name>`
 
 **Detaching from a session**
 
@@ -45,6 +49,7 @@ tmux
 **Kill a session**
 
   - `tmux kill-session -t <session-name>`
+  - `exit` : kill the current session, when just only one window in session
   
 ### Window
 
@@ -65,22 +70,26 @@ tmux
   - `C+b n` : change to next window
   - `C+b p` : change to previous window
   - `C+b [0-9]` : select windows 0 through 9
+  - `C+b f` : we can navigate to a window by the name of window
 
 **Kill a window**
   - `C+b &` : kill the current window
   - `tmux kill-window -t <window-name>`
+  - `exit`
 
 ### Pane
 
 **Navigate between the panes**
-
-  - `C+b h` : move to left
-  - `C+b j` : move to down
-  - `C+b k` : move to up
-  - `C+b l` : move to right
+  - `C+b <LEFT>` : move to left
+  - `C+b <DOWN>` : move to down
+  - `C+b <UP>` : move to up
+  - `C+b <RIGHT>` : move to right
 
 **Toggle between panes**
- - `C+b o`
+  - `C+b o`
+
+**Switch between default pane layouts**
+  - `C+b SPACEBAR`
 
 **Return to the previously active pane**
   - `C+b ;`
@@ -97,6 +106,7 @@ tmux
 
 **kill current pane**
   - `C+b x`
+  - `exit`
 
 ### Buffer
 
