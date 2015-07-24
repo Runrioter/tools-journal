@@ -5,7 +5,7 @@ tmux
 - [Window](#window)
 - [Pane](#pane)
 - [Buffer](#buffer)
-- [Command Mode](#command mode)
+- [Command Mode](#command-mode)
 - [Configuration](#configuration)
 - [Miscellaneous](#miscellaneous)
 
